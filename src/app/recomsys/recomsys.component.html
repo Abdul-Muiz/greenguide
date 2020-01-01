@@ -1,0 +1,55 @@
+<app-header></app-header>
+<body class="home page-template page-template-page-HOME page-template-page-HOME-php page page-id-15 LASlideshow LAColumns" style>
+	<div id="master-wrap">
+  
+	  <div id="top-bar">
+		<div class="top-bar-inner content-width">
+  <form role="search" method="get" id="searchform" action="#" class="searchform global-search">
+  <label class="is-hidden" for="s">Search Green Guide</label>
+  <input type="search" value="" name="s" id="s" placeholder="Search Green Guide">
+  <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+  </form><!-- / #searchform --> 
+		</div><!-- / .top-bar-inner -->
+	  </div><!-- / #top-bar -->
+	
+	  <header>
+		<img alt="img" class="img-responsive smaller fit" src="assets\img\logo.jpg">
+	  </header><!-- / #site-header -->
+  
+	  <nav id="main-menu" class="content-width">
+  
+		<div id="mobile-button"><i class="fa fa-bars"></i></div>
+  
+		<h1 class="is-hidden">Main Menu</h1>
+  
+		<ul class="menu">
+		  <li id="menu-item-11686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11686"><a href="pdb">Plants</a></li>
+		  <li id="menu-item-4907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4907"><a href="rcms">Recomendation Systems</a></li>
+  <li id="menu-item-4910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4910"><a href="#">About Us</a>
+  <ul class="sub-menu">
+  <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="#">About GreenGuide</a></li>
+  <li id="menu-item-9079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9079"><a href="#">Contact Us</a></li>
+  </ul>
+</li>
+  <li id="menu-item-4908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4908"><a href="lform">Login</a></li>
+        </ul><!-- / .menu -->
+        <div>
+      
+      
+      
+        <table id="searchTextResults">
+          <tr><th>Name</th><th>Phone</th></tr>
+          <tr ng-repeat="friend in friends">
+          <td>{{friend.name}}</td>
+          <td>{{friend.phone}}</td>
+          </tr>
+          </table>
+      </div>
+
+<label>Search: <input ng-model="searchText"></label>
+
+<hr>
+<label>Any: <input ng-model="search.$"></label> <br>
+<label>Name only <input ng-model="search.name"></label><br>
+<label>Phone only <input ng-model="search.phone"></label><br>
+<label>Equality <input type="checkbox" ng-model="strict"></label><br>
